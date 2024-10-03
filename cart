@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilusoneta - Carrito</title>
+    <script>
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = document.getElementById('cart-items');
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                cartItems.innerHTML += `<li>${item.productName} - $${item.price} 
+                <button onclick="removeFromCart(${index})">Eliminar</button></li>`;
+                total += item.price;
+            });
+            document.getElementById('total').innerText = 'Total: $' + total;
+        }
+
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            displayCart();
+        }
+    </script>
+</head>
+<body onload="displayCart()">
+    <header>
+        <h1>Carrito</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="products.html">Productos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Tu carrito</h2>
+        <ul id="cart-items"></ul>
+        <p id="total"></p>
+        <a href="checkout.html">Proceder a la compra</a>
+    </section>
+</body>
+</html>
