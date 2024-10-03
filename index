@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilusoneta - Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Pilusoneta</h1>
+        <nav>
+            <a href="products.html">Productos</a>
+            <a href="cart.html">Carrito</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Nuestros Productos</h2>
+        <p>Explora nuestra colección de gorros pilusos, riñoneras y más, fabricados con tus camisetas recicladas.</p>
+        <a href="products.html">Ir a la tienda</a>
+    </section>
+</body>
+</html>
