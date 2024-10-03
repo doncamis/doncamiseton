@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilusoneta - Confirmación de Pedido</title>
+</head>
+<body>
+    <header>
+        <h1>Confirmación del Pedido</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="products.html">Productos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>¡Gracias por tu compra!</h2>
+        <p>Recibirás un correo de confirmación en breve.</p>
+        <a href="index.html">Volver a la tienda</a>
+    </section>
+</body>
+</html>
